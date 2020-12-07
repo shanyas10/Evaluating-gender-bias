@@ -13,6 +13,8 @@ The idea of this work to undertsand how sensitive different pretrained language 
 As explained in section 3.1 of the paper We design a challenge dataset D’<P,F,M> with P as a set of gender-neutral premise and F and M as the set of female and male-specific hypothesis respectively.
 **Premise**: We use a list of 38 different occupations and filter out sentences mentioning this occupation from the existing NLI datasets (MNLI, SNLI, ANLI, QNLI)
 **Hypothesis**: Gender specific templates like “This text talks about a [female/male] occupation” are used to construct the hypothesis.
+
+
 ![Dataset Structure](images/dataset_structure.png)
 
 The code for dataset creation can be found [here](Evaluation_Dataset_Creation.ipynb). 
