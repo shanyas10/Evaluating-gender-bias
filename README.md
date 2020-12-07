@@ -13,7 +13,7 @@ The idea of this work to undertsand how sensitive different pretrained language 
 As explained in section 3.1 of the paper We design a challenge dataset D’<P,F,M> with P as a set of gender-neutral premise and F and M as the set of female and male-specific hypothesis respectively.
 **Premise**: We use a list of 38 different occupations and filter out sentences mentioning this occupation from the existing NLI datasets (MNLI, SNLI, ANLI, QNLI)
 **Hypothesis**: Gender specific templates like “This text talks about a [female/male] occupation” are used to construct the hypothesis.
-![alt text](Isolated.png "Title")
+![Dataset Structure](images/dataset_structure.png)
 
 The code for dataset creation can be found [here](Evaluation_Dataset_Creation.ipynb). 
 - [MNLI Evaluation Dataset](MNLI_Evaluation_Set.xlsx) 
@@ -24,7 +24,7 @@ The code for dataset creation can be found [here](Evaluation_Dataset_Creation.ip
 - Metric B suggests that all tested models perform better when presented with pro-stereotypical hypothesis (Details about metric can be found in section 3.2 of the paper)
 - BERT shows a significant amount of bias and is the highest among the three.
 - Models fine tuned on SNLI have a relatively higher bias than those trained on MNLI
-![Results]()
+![Results](images/results.png)
 
 Code for the evaluation can be found [here](https://github.com/shanyas10/Evaluating-gender-bias/blob/master/Predictions.ipynb)
 
@@ -34,7 +34,7 @@ We augment gender-swapped sentences to the original training set and use it to t
 
 ## Collaborators
 
-@manandey, @koustuvsinha
+[@manandey](https://github.com/manandey), @koustuvsinha
 
 
 
