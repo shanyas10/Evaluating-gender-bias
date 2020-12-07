@@ -34,7 +34,7 @@ We augment gender-swapped sentences to the original training set and use it to t
 
 ## Collaborators
 
-[@manandey](https://github.com/manandey), @koustuvsinha
+[@manandey](https://github.com/manandey), [@koustuvsinha](https://github.com/koustuvsinha)
 
 
 
