@@ -31,8 +31,8 @@ The code for dataset creation can be found [here](Evaluation_Dataset_Creation.ip
 Code for the evaluation can be found [here](https://github.com/shanyas10/Evaluating-gender-bias/blob/master/Predictions.ipynb)
 
 ## Debiasing
-
-We augment gender-swapped sentences to the original training set and use it to train the model. For swapping, all the occupation-based entities from the original training set are identified. Gender specific words viz. he, boy, man are swapped with their opposite counterpart to create new sentences. ([Code](https://github.com/shanyas10/Evaluating-gender-bias/blob/master/Augmentation_Dataset_Creation.ipynb))
+(Section 4)
+We augment gender-swapped sentences to the original training set and use it to train the model. For swapping, all the occupation-based entities from the original training set are identified. Gender specific words viz. he, boy, man are swapped with their opposite counterpart to create new sentences. The augmented dataset can be created using this ([notebook](https://github.com/shanyas10/Evaluating-gender-bias/blob/master/Augmentation_Dataset_Creation.ipynb))
 
 ## Collaborators
 
