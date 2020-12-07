@@ -15,9 +15,9 @@ As explained in section 3.1 of the paper We design a challenge dataset D’<P,F,
 **Hypothesis**: Gender specific templates like “This text talks about a [female/male] occupation” are used to construct the hypothesis.
 ![alt text](Isolated.png "Title")
 
-The code for dataset creation can be found [here](Evaluation_Dataset_Creation.ipynb). 
-- [MNLI Evaluation Dataset](MNLI_Evaluation_Set.xlsx) 
-- [SNLI Evaluation Dataset](SNLI_Evaluation_Set.xlsx)
+The code for dataset creation can be found [here](dataset/Evaluation_Dataset_Creation.ipynb). 
+- [MNLI Evaluation Dataset](dataset/MNLI_Evaluation_Set.xlsx) 
+- [SNLI Evaluation Dataset](dataset/SNLI_Evaluation_Set.xlsx)
 
 ## Evaluation and Result
 (Section 3.3)
@@ -26,11 +26,11 @@ The code for dataset creation can be found [here](Evaluation_Dataset_Creation.ip
 - Models fine tuned on SNLI have a relatively higher bias than those trained on MNLI
 ![Results]()
 
-Code for the evaluation can be found [here](https://github.com/shanyas10/Evaluating-gender-bias/blob/master/Predictions.ipynb)
+Code for the evaluation can be found [here](evaluation/Predictions.ipynb)
 
 ## Debiasing
 
-We augment gender-swapped sentences to the original training set and use it to train the model. For swapping, all the occupation-based entities from the original training set are identified. Gender specific words viz. he, boy, man are swapped with their opposite counterpart to create new sentences. ([Code](https://github.com/shanyas10/Evaluating-gender-bias/blob/master/Augmentation_Dataset_Creation.ipynb))
+We augment gender-swapped sentences to the original training set and use it to train the model. For swapping, all the occupation-based entities from the original training set are identified. Gender specific words viz. he, boy, man are swapped with their opposite counterpart to create new sentences. ([Code](dataset/Augmentation_Dataset_Creation.ipynb))
 
 ## Collaborators
 
