@@ -15,25 +15,22 @@ As explained in section 3.1 of the paper We design a challenge dataset D’<P,F,
 **Hypothesis**: Gender specific templates like “This text talks about a [female/male] occupation” are used to construct the hypothesis.
 ![alt text](Isolated.png "Title")
 
-The code for dataset creation can be found [here](https://github.com/shanyas10/Evaluating-gender-bias/blob/master/Evaluation_Dataset_Creation.ipynb). [MNLI Evaluation Dataset](MNLI_Evaluation_Set.xlsx) [SNLI Evaluation Dataset](SNLI_Evaluation_Set.xlsx)
+The code for dataset creation can be found [here](Evaluation_Dataset_Creation.ipynb). 
+- [MNLI Evaluation Dataset](MNLI_Evaluation_Set.xlsx) 
+- [SNLI Evaluation Dataset](SNLI_Evaluation_Set.xlsx)
 
 ## Evaluation and Result
 (Section 3.3)
 - Metric B suggests that all tested models perform better when presented with pro-stereotypical hypothesis (Details about metric can be found in section 3.2 of the paper)
 - BERT shows a significant amount of bias and is the highest among the three.
 - Models fine tuned on SNLI have a relatively higher bias than those trained on MNLI
-![Performance of the models when fine-tuned on SNLI and MNLI datasets respectively. The
-metric Acc indicates the model accuracy when trained on original NLI dataset (SNLI/MNLI) and
-evaluated on dev set (dev-matched for MNLI). Metrics S, B and ∆P are as explained in Section 3.2.
-Numerics in bold represent the best value (least bias) for each metric. SNLI (O) and MNLI (O) and
-SNLI (I) and MNLI (I) represent the performamce of models trained on original SNLI and MNLI
-datasets and evaluated on out-of-ditribution and in-distribution evaluation sets respectively.]()
+![Results]()
 
 Code for the evaluation can be found [here](https://github.com/shanyas10/Evaluating-gender-bias/blob/master/Predictions.ipynb)
 
 ## Debiasing
 
-We augment gender-swapped sentences to the original training set and use it to train the model. For swapping, all the occupation-based entities from the original training set are identified. Gender specific words viz. he, boy, man are swapped with their opposite counterpart to create new sentences. ([Code](https://github.com/shanyas10/Evaluating-gender-bias/blob/master/Augmentation_Dataset_Creation.ipynb)]
+We augment gender-swapped sentences to the original training set and use it to train the model. For swapping, all the occupation-based entities from the original training set are identified. Gender specific words viz. he, boy, man are swapped with their opposite counterpart to create new sentences. ([Code](https://github.com/shanyas10/Evaluating-gender-bias/blob/master/Augmentation_Dataset_Creation.ipynb))
 
 ## Collaborators
 
